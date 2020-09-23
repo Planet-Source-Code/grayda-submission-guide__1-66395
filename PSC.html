@@ -1,0 +1,70 @@
+<p><strong>Introduction</strong></p>
+<p>I've been a proud member of PSCode.com for roughly 4-5 years. Since I first joined, I was always amazed at the amount of code here. Almost anything I could ever want, was at PSCode.com. My first ever chat submission (Can still be found <a href="http://www.planet-source-code.com/vb/scripts/ShowCode.asp?txtCodeId=57850&lngWId=1">here</a>) was written with the help of a few slabs of code I found around the site. To me, PSC was something new and exciting. It was a place to showcase my programming works, a place to share my findings, and my code, with many others out there, who were either uninspired and needed ideas for their project, or people who didn't know how to do something, yet wanted to learn how something worked. As time went along, I started to not spend as much time on PSC, and instead continued programming for the open-source community, occasionally coming back to post my works for others to look at and rate. Upon coming back one day, I did some searching, looking for ways to improve my next big chat application (can be found <a href="http://pscode.com/vb/scripts/ShowCode.asp?txtCodeId=65468&lngWId=1">here</a>), when I noticed. PSC isn't what it used to be.</p>
+<p>What do I mean? Well when I first joined, I noticed lots of great code, people pushing the boundaries of Visual Basic, people writing chat applications that were more than just a basic, overdone &quot;How To&quot;, people using proper ways to communicate with Yahoo! Servers (for games, chat, email, whatever), and people who dared to be different, and write complete, ground-breaking applications. These days have long gone I'm afraid.</p>
+<p><strong>What's the problem?</strong></p>
+<p>I'm always seeing people who write spaghetti code, code that's been flogged to death, unchecked code and basically applications that do things right, but the wrong way.. hidden WebBrowser controls used for retrieving websites, OCX dependencies that are never used, or shouldn't be used are included, often pushing filesizes up, or making people run around trying to download zip files with OCXs, DLLs, and other knick-knacks that aren't entirely neccessary to the point of the code. Lack of screenshots are also a problem, and can be frustrating for code-treckers.. </p>
+<p><strong>So what can we do?</strong></p>
+<p>Now we get to the good bit. How to submit a good slab of code that is useful to the people, and informative.</p>
+<ul>
+  <li>The title of your submission
+    <blockquote>
+      <p>Make this as informative, and as &quot;to the point&quot; as possible. People don't want to read &quot;!!!!!!!!!!!! A+++++ CODE ___ make ur own web in 2 mins&quot; or &quot;michaelWeb v310.3921&quot;. This doesn't tell anyone much, and use of acronyms such as &quot;u&quot;, &quot;ur&quot;, &quot;plz&quot;, &quot;thx&quot; don't get you anywhere. Something more like this is appropriate: &quot;How-To: Create your own GUI using HTML and CSS [4 bugfixes 1/5/06]&quot;. And don't lie to the people. If your code can't interface with the kettle, don't tell the people it can. This saves a lot of confusion, frustration and emails sent to your inbox &quot;Code doesn't work, can you email me the ZIP with kettle interface? thx!&quot;. </p>
+    </blockquote>
+  <li>Your description 
+    <blockquote> 
+      <p>Don't forget, HTML and newlines doesn't work in the submission description, so please refrain from using the &lt;br /&gt; command, and try not to separate your description with ___________ because this causes readability issues. A good way is to use asterisks, such as this:</p>
+      <p>This code demonstrates in a straightforward manner, how to create your Graphical User Interface for your Visual Basic 6 project, using the Internet Explorer engine. Raise VB events using IE, create customizable User Interfaces. Requires IE 5.5 and above for CSS usage. ** Fixed 4 critical bugs dealing with CSS Secutity</p>
+      <p>This is straight to the point. As you can see, it tells you what it does, in a few lines. There is no fiddly descriptions to add in. If you really want to show all your changes, do it in a &quot;Readme.txt&quot; file in your zip file. If you really must, limit such change descriptions:</p>
+      <p>** Fixed: 4 CSS vunerabilities, No crash on startup, Drag and drop for UI working </p>
+    </blockquote>
+  </li>
+  <li>Avoid flogging the dead horse  
+    <blockquote> 
+      <p>On PSC, it always pays to <a href="http://pscode.com/vb/scripts/search.asp?lngWId=1"><em><strong>search</strong></em></a>. Before you submit your <a href="http://pscode.com/vb/scripts/BrowseCategoryOrSearchResults.asp?optSort=Alphabetical&txtCriteria=Chat+Emote&blnWorldDropDownUsed=TRUE&txtMaxNumberOfEntriesPerPage=10&blnResetAllVariables=TRUE&lngWId=1&B1=Quick+Search">chat application that has smileys</a>, or your own <a href="http://pscode.com/vb/scripts/BrowseCategoryOrSearchResults.asp?optSort=Alphabetical&txtCriteria=Web+Browser&blnWorldDropDownUsed=TRUE&txtMaxNumberOfEntriesPerPage=10&blnResetAllVariables=TRUE&lngWId=1&B1=Quick+Search">web-browser</a>, look around. Chances are, someone has already done it. You don't have to submit your application right away. Look at what others have done, and build upon your own code. Don't make your own chat system, unless your chat system does something every other system can't do, like MSN-style custom emotes, interfacing with MySQL databases to cluster servers, or something like that. You don't need to submit your <a href="http://pscode.com/vb/scripts/BrowseCategoryOrSearchResults.asp?optSort=Alphabetical&txtCriteria="2+minute"&blnWorldDropDownUsed=TRUE&txtMaxNumberOfEntriesPerPage=10&blnResetAllVariables=TRUE&lngWId=1&B1=Quick+Search">2 minute</a> code, just because you can. It makes people's lives easier, and your code will get much better feedback, if you avoid the so called Dead Horse Effect.</p>
+    </blockquote>
+  </li>
+  <li>Get rid of those OCXs
+    and images!
+    <blockquote> 
+      <p>How often have you come across a bit of code that claims to do the world and more, but you find out, it's just 2 lines of code, and the rest of the work is done by someone else's closed-source OCX / DLL? For me, that's quite often. In 99% of my applications I write, I use alternatives to OCXs. It's possible to take the source code of an open-source DLL, and paste it directly into your application. In my application, I use Emiliano Scavuzzo's <a href="http://pscode.com/vb/scripts/ShowCode.asp?txtCodeId=54681&lngWId=1">CSocketMaster 1.2 &amp; CSocketPlus 1.1 - Winsock classes</a> to replace the winsock control. ALL of the code is located within 1 module, and 1 class in the main app. This means I don't have to include any extra DLLs or OCX's, and I still get all the functionality of a winsock replacement. So where possible, get rid of the OCXs. There is almost always an open-source version of that dependency, or better yet, an API. <a href="http://www.opengis.com">OpenGIS</a> (my latest programming work) is using a custom built treeview control. It's about 95% less bloated than the Common Controls library, so that saves a LOT of size when I package this file into a setup, and also saves a LOT of loading times etc. You don't hire a crane to lift a box of magazines do you? Don't bloat up your apps to display stuff in a treeview. Find alternatives!</p>
+      <p>Images are also a pain. People include BMP files in their applications, unaware of the massive strain it puts on the filesize. Don't use images where possible, and if you must use images, compress them in a smaller format, such as GIF, JPEG (With image quality set at below 80%). This makes it easier for dialup people to download your code, and doesn't cheese up your application </p>
+    </blockquote>
+  </li>
+  <li>Fix and test your code 
+    <blockquote> 
+
+      <p><a href="http://www.mztools.com/">MzTools</a> is free, and allows you to find unused variable, dead code and other things in your application. Please use that before submitting. It makes code easier to read, and keeps it in order. Don't forget Option Explicit. This FORCES you to use variable declaration, so your code won't run without the proper DIM, PUBLIC, PRIVATE or GLOBAL statements.</p>
+      <p>Some APIs don't work on Windows ME and lower. Keep this in mind. Some code isn't backwards compatible with all versions of Windows, so write for 95, and test for XP. It makes understanding and using code a LOT easier.. </p>
+      <p>And make sure you compile your application before you zip it up. There are LOTS of submissions on PSC that fail on startup, because people don't test their code before, and miss out on bugs, such as incomplete lines, infinite loops, and other nasties that should be fixed upon a good compile and test.
+</p>
+    </blockquote>
+  </li>
+  <li>Don't bloat your  
+    GUIs
+      <blockquote> 
+      <p>It's so easy to bloat up your applications with useless buttons and dials and whizz-bang components, but it's not neccessary. If you're making a program that parses TXT files from a directory, is it REALLY neccessary to have a usercontrol that gives you a button, that is customizable in 100 ways? Or do you REALLY need the badly done clip-art of a guy hitting a computer with a mallet? I doubt it, unless your application requires it. So leave your fancy effects at home. The same goes for standard VB controls. Limit the amount of controls you need. If your code shows how to read from a database from a textfile, do you need 4 buttons? </p>
+    </blockquote>
+  </li>
+  <li>Screenshots
+    <blockquote> 
+      <p>Screenshots are the best way to attract someone's attention. I know I'll give an application a second look if they have a nice screenshot. So take the time to prepare a nice screenshot of your program in action, and if possible, fit 3 or 4 into a screenshot, in the form of a GIF file (see mine <a href="http://pscode.com/Upload_PSC/ScreenShots/PIC20041222756274285.gif">here</a>, <a href="http://pscode.com/Upload_PSC/ScreenShots/PIC2005818534564799.gif">here</a> and <a href="http://pscode.com/Upload_PSC/ScreenShots/PIC2006525541559782.gif">here</a>)</p>
+    </blockquote>
+  </li>
+  <li>Comments 
+    <blockquote> 
+      <p>All too many times, I've seen people who submit code, then on their own submission, add additional statements in the form of comments &quot;Update can be found here: http://www.whatever.com/updated&quot; &quot;Comments appreciated&quot; &quot;Fixed an issue with modGoat.bas where strBinPatrol didn't function at all&quot; &quot;comment plz!! votee 2 plz!!!! i want know wot u think thx!&quot;. If you have something to say, edit your submission's description so you can put the info there, like I have mentioned above. This saves your comment box being too bloated, and it makes it easier for people to find comments directly relating to your code. </p>
+    </blockquote>
+  </li>
+  <li>Advanced coding
+    <blockquote> 
+      <p>Please don't mark your code as advanced if it's 2 minute code. If it encrypts a file with unbreakable 1024 bit encryption, then yes it's advanced. If it encrypts text by changing the font to Windings, then it's beginner. Search through the site, find examples like yours, and rate yourself based on what you find. Just because you use VB6 for 6 years, doesn't mean your 2 minute app that finds a window and closes it based on the caption, is advanced. It's at the most, intermediate.</p>
+    </blockquote>
+  </li>
+</ul>
+<p>Sure, there are many many more tips I could be giving here, such as why it's not cool to submit anything and everything, but that might be for another day.. thankyou for reading (Sorry if it's a bit long) and keep on coding! Post your feedback here, and suggestions for the article, and I'll see what I can do :) </p>
+<!--    <li>Title 
+    <blockquote> 
+      <p>Description</p>
+    </blockquote>
+  </li>
+--> 
